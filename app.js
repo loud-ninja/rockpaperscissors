@@ -1,7 +1,6 @@
-const gameOptions = ['rock','paper','scissors'];
-//let str = prompt('rock, paper, scissors?')
-let playerSelection = prompt('rock, paper, scissors?');
-//str.match(/geeks/gi); 
+const gameOptions = ['ROCK','PAPER','SCISSORS'];
+let str = prompt('ROCK, PAPER, SCISSORS?');
+let playerSelection = str.toLocaleUpperCase();
 
 function computerPlay() {
     // 
@@ -11,33 +10,33 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
-    if (playerSelection == 'rock' ) {
-        if (computerSelection == 'rock') {
+    if (playerSelection == 'ROCK' ) {
+        if (computerSelection == 'ROCK') {
             alert(`Draw. ${computerSelection}`) 
-        } else if (computerSelection == 'scissors') {
+        } else if (computerSelection == 'SCISSORS') {
             alert(`Player Wins. ${playerSelection} wins ${computerSelection}`);
-        } else if (computerSelection == 'paper') {
+        } else if (computerSelection == 'PAPER') {
             alert(`Computer Wins. ${computerSelection} wins ${playerSelection}`);
-        } else {alert ('Please choose Rock, Paper, Scissors.')}
+        } 
 
-    } if (playerSelection == 'paper' ) {
-        if (computerSelection == 'paper') {
+    } else if (playerSelection == 'PAPER' ) {
+        if (computerSelection == 'PAPER') {
             alert(`Draw. ${computerSelection}`)
-        } else if (computerSelection == 'rock') {
+        } else if (computerSelection == 'ROCK') {
             alert(`Player Wins. ${playerSelection} wins ${computerSelection}`);
-        } else if (computerSelection == 'scissors') {
+        } else if (computerSelection == 'SCISSORS') {
             alert(`Computer Wins. ${computerSelection} wins ${playerSelection}`)
-        } else {alert ('Please choose Rock, Paper, Scissors.')}
+        } 
 
-    } if (playerSelection == 'scissors') {
-        if (computerSelection == 'scissors') {
+    } else if (playerSelection == 'SCISSORS') {
+        if (computerSelection == 'SCISSORS') {
             alert(`Draw. ${computerSelection}`)
-        } else if (computerSelection == 'paper'){
+        } else if (computerSelection == 'PAPER'){
             alert(`Player Wins. ${playerSelection} wins ${computerSelection}`);
-        } else if (computerSelection == 'rock') {
+        } else if (computerSelection == 'ROCK') {
             alert(`Computer Wins. ${computerSelection} wins ${playerSelection}`)
-        } else {alert ('Please choose Rock, Paper, Scissors.')}
-    } else {alert ('Please choose Rock, Paper, Scissors.')}
+        } 
+    }  else {alert ('Please choose ROCK, PAPER, SCISSORS.')}
 }
 
 
