@@ -1,20 +1,23 @@
 const gameOptions = ['ROCK','PAPER','SCISSORS'];
- let str = prompt('ROCK, PAPER, SCISSORS?');
- let playerSelection = str.toLocaleUpperCase();
+
+function playerPlay() {
+    // Player types in choice
+    let str = prompt('ROCK, PAPER, SCISSORS?');
+    let playerChoice = str.toLocaleUpperCase();
+    return playerChoice;
+}
+let playerSelection = playerPlay();
 
 function computerPlay() {
-    // 
-    let choice = Math.floor(Math.random() * gameOptions.length)
-    return gameOptions[choice];
+    // Computer random generates choice
+    let computerChoice = Math.floor(Math.random() * gameOptions.length)
+    return gameOptions[computerChoice];
 }
-
 let computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
-    str;
-    playerSelection;
-    
+        
     if (playerSelection == 'ROCK' ) {
         if (computerSelection == 'ROCK') {
             alert(`Draw. ${computerSelection}`) 
@@ -44,24 +47,21 @@ function playRound(playerSelection, computerSelection) {
     }  else {alert ('Please choose ROCK, PAPER, SCISSORS.')}
 }
 
-playRound(playerSelection, computerSelection);
-
-// console.log(playerSelection);
-// console.log(computerSelection);
-// console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
 
 
+/*
 function playGame() {
 
     playRound(playerSelection, computerSelection);
-    //playRound(playerSelection, computerSelection);
-    //playRound(playerSelection, computerSelection);
-    //playRound(playerSelection, computerSelection);
-    //playRound(playerSelection, computerSelection);
+    playRound(playerSelection, computerSelection);
+    playRound(playerSelection, computerSelection);
+    playRound(playerSelection, computerSelection);
+    playRound(playerSelection, computerSelection);
 }
 
-console.log(playGame());
-
+playGame();
+*/
 
 
 
