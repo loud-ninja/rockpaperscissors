@@ -47,7 +47,7 @@ function playRound(playerSelection, computerSelection) {
     }  else {alert ('Please choose ROCK, PAPER, SCISSORS.')}
 }
 
-console.log(playRound(playerSelection, computerSelection));
+// console.log(playRound(playerSelection, computerSelection));
 
 
 /*
