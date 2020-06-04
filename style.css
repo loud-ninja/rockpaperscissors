@@ -66,6 +66,8 @@ body {
     font-weight: bold;
 }
 
+
+
 .choices{
     margin-top: 50px;
     text-align: center;
@@ -104,17 +106,27 @@ body {
 .green-glow {
     border: 10px solid #4dcc7d;
     box-shadow: 0 0 10px #31b43a;
+    transition: 0.5s;
 }
 
 .red-glow {
     border: 10px solid #fc121b;
     box-shadow: 0 0 10px #d01115;
+    transition: 0.5s;
 }
 
 .gray-glow {
     border: 10px solid #464647;
     box-shadow: 0 0 10px #25292b;
+    transition: 0.5s;
 }
 
-
-
+#game-over {
+    display:none;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+}
