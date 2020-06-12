@@ -101,6 +101,7 @@ body {
     font-weight: bold;
     font-size: 20px; 
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .green-glow {
@@ -129,4 +130,16 @@ body {
     font-size: 50px;
     font-weight: bold;
     font-family: 'Asap', sans-serif;
+
+}
+
+.button-reset {
+    padding: 15px 32px;
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px #25292b;
+    font-size: 20px;
+    font-family: Asap, sans-serif;
+    background: #4CAF50;
 }
